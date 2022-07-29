@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D,S,R</title>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--Battle Styles-->
+   
+
+</head>
+<body>
+
+    <!-- HTML BODY -->
+
+    <h1 id="winnerP1"> PLAYER 1 WINS</h1>
+    <h1 id="winnerP2"> PLAYER 2 WINS</h1>
+
+    <h2 id="start">Begin!</h2>
+    
+    <div id="P1BUTTS"></div>
+    <button id="p1Shoot">P1 Shoot</button>
+    <button id="p1Dodge">P1 Dodge</button>
+    <button id="p1Reload">P1 Reload</button>
+
+    <div id="P2BUTTS"></div>
+    <button id="p2Shoot">P2 Shoot</button>
+    <button id="p2Dodge">P2 Dodge</button>
+    <button id="p2Reload">P2 Reload</button>
+
+    <div id="subBUTT"></div>
+<button id="submitButton"> SUBMIT </button>
+<p id="statsP1"></p>
+<P id="statsP2"></P>
+    <p id="dialogueSpace"></p>
+
+
+    <!-- SCRIPTING SPACE -->
+
+<script>  $(document).ready(() => {
+
+
+    // DECLARATIONS
+
+    var canBeShotP1 = true;
+    var canBeShotP2 = true;
+    var ammoP1 = 0;
+    var ammoP2 = 0;
+
+
+    //
+
+    // FUNCTIONS
+
+ /*   function toggleDodgeP1() {
+        
+        if (canBeShot == true) {
+            return canBeShotP1 = !canBeShotP1;
+        } else {
+            return;
+        }
+    }
+
+    function toggleDodgeP2() {
+
+        if (canBeShotP2 == true) {
+            return canBeShotP2 = !canBeShotP2; 
+        } else {
+            return;
+        }
+    }
+*/
+
+    //
+
+    // jQuery MANIPULATION
+
+    $("#winnerP1").hide();
+    $("#winnerP2").hide();
+
+    
+    // P1 BUTTONS
+
+  
+    // P2 BUTTONS
+
+
+})
+</script>
+<script src="/Battle/Battle.js"></script>
+<script src="/Battle/battleFunctions.js"></script>
+</body>
+</html>
